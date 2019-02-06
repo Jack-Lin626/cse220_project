@@ -1,4 +1,3 @@
 # rules_rocketchip_meta
-Monorepo of rocketchip packages
-Bazel build rules for Freechipsproject repos.
+Monorepo of rocketchip packages with Bazel BUILD rules.
 Requires Bazel 0.16
