@@ -21,7 +21,11 @@ http_archive(
 
 load("@io_bazel_rules_scala//scala:scala.bzl", "scala_repositories")
 
-scala_repositories()
+scala_repositories(("2.12.8", {
+    "scala_compiler": "f34e9119f45abd41e85b9e121ba19dd9288b3b4af7f7047e86dc70236708d170",
+    "scala_library": "321fb55685635c931eba4bc0d7668349da3f2c09aee2de93a70566066ff25c28",
+    "scala_reflect": "4d6405395c4599ce04cea08ba082339e3e42135de9aae2923c9f5367e957315a"
+}))
 
 load("@io_bazel_rules_scala//scala:toolchains.bzl", "scala_register_toolchains")
 
@@ -55,3 +59,12 @@ local_repository(
     path = "../firrtl",
 )
 
+local_repository(
+    name = "chisel3",
+    path = "../chisel3",
+)
+
+local_repository(
+    name = "berkeley_hardfloat",
+    path = "../berkeley-hardfloat",
+)

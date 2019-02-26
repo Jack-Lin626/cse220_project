@@ -46,7 +46,7 @@ dependencies:
     json4s-native:
       lang: scala
       version: "3.6.1"
-
+      
 replacements:
   org.scala-lang:
     scala-reflect:
